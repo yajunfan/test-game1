@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/usemap.css">
+</head>
+<body>
+    <div id="main">
+            <div class="header">
+                    <!-- <p class="title-left">WI-FI安全</p> -->
+                    <div class="title tc">请你来问诊~</div>
+                    <div class="time">100s</div>
+                </div>
+                
+                <div class="container">
+                       
+                    <div class="outer pic_box">
+                        <img src="../static/imgs/办公区域Q.jpg" alt="办公区域" class="img">
+                        
+                    </div>
+                    
+                </div>
+                <div id="area_list" class="area_list"></div>
+                <div class="footer ">
+                    <div class="tc tip">本图有 <b>4</b> 处错误</div>
+                    <div class="answer-box">
+                        <h4 class="answer-title"></h4>
+                        <div class="answer"></div>
+                    </div>
+                </div>
+                
+                
+                <div class="btn-box tc">
+                    <div class="button next cp">下一个</div>
+                    <div class="button ok hide cp">cho开始</div>
+                </div>
+                <div class="error-point hide">X</div>
+    </div>
+    
+</body>
+<script src="../static/js/jquery-3.5.1.min.js"></script>
+
+<script>
+    var n;
+    ~function (desW) {
+        var winW = document.documentElement.clientWidth,
+            oMain = document.getElementById("main");
+            n = winW / desW;
+        if (winW > desW) {
+            oMain.style.width = desW + "px";
+            return;
+        };
+        document.documentElement.style.fontSize = n * 100 + "px";
+        
+    }(1536);
+</script>
+<script src="../static/js/usemap.js"></script>
+</html>
